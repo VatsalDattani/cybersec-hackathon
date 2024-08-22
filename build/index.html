@@ -6,6 +6,17 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      table{
+          border-collapse: collapse;
+          width: 100%;
+      }
+  th,td{
+      border: 2px solid green;
+      padding: 15px;
+  }
+
+    </style>
   </head>
   <body>
     <!-- Main navigation container -->
@@ -21,5 +32,32 @@
         >
       </div>
     </nav>
+
+    <table>
+      <thead>
+      <tr>
+        <th *ngFor = "let tableheader of tableheaders"> {{tableheader}} </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td *ngFor = "let tabledata of tabledatas"> {{tabledata}} </td>
+      </tr>
+
+      <tr>
+        <td *ngFor = "let tabledata1 of tabledatas1"> {{tabledata1}} </td>
+      </tr>
+      <tr>
+        <td *ngFor = "let tabledata2 of tabledatas2"> {{tabledata2}} </td>
+      </tr>
+      <tr>
+        <td *ngFor = "let tabledata3 of tabledatas3"> {{tabledata3}} </td>
+      </tr>
+      <tr>
+        <td *ngFor = "let tabledata4 of tabledatas4"> {{tabledata4}} </td>
+      </tr>
+      </tbody>
+    </table>
   </body>
 </html>
